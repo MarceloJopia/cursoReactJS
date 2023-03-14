@@ -1,0 +1,26 @@
+.flexCart{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardWidgetIcon{
+    height: 25px;
+    width: 25px;
+    padding: 5px;
+    filter: invert()
+}
+
+.borderCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+div div b{
+    width: 25px;
+}
