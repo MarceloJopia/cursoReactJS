@@ -1,0 +1,31 @@
+.cardProducto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 200px 1fr 1fr;
+    width: 260px;
+    height: 320px;
+    border: 1px solid rgb(80, 168, 168);
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 5px 5px 12px 0px rgb(80, 168, 168);
+    background-color: rgba(213, 234, 234);
+}
+
+.cardProducto b, .cardProducto p, .cardProducto img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.productTitle{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cardImage{
+    max-width: 240px;
+    max-height: 160px;
+    margin: auto;
+}

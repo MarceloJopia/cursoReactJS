@@ -1,25 +1,26 @@
 import CartWidget from '../CartWidget/CartWidget'
 import './Navbar.css'
 import logoBlanco from './assets/logo-blanco.png'
+import { Link } from 'react-router-dom'
 
 const Nabvar = () => {
     return (
         <nav className="navGridBase">
-            <a href="#">
+            <Link to='/'>
                 <img src={logoBlanco} className='logoNavBar'></img>
-            </a>
+            </Link>
             <ul className="navGridList">
                 <li>
-                    <a href="#">Inicio</a>
+                    <Link to='/'>Inicio</Link>
                 </li>
                 <li>
-                    <a href="#">Video Juegos</a>
+                    <Link to='/categoria/video-juegos'>Video Juegos</Link>
                 </li>
                 <li>
-                    <a href="#">Consolas</a>
+                    <Link to='/categoria/consolas'>Consolas</Link>
                 </li>
                 <li>
-                    <a href="#">Otros</a>
+                    <Link to='/categoria/otros'>Otros</Link>
                 </li>
             </ul>
             <a href="#">

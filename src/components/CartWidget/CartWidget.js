@@ -5,7 +5,7 @@ const CartWidget = ({productosEnCarrito}) => {
     return(
         <div className='flexCart'>
             <div className='borderCart'>
-                <b>{productosEnCarrito}</b> 
+                <b>{productosEnCarrito}</b>
                 <img src={cart} className='cardWidgetIcon'/>
             </div>
         </div>

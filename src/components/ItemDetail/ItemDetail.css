@@ -1,0 +1,38 @@
+.CardItem {
+    width: 500px;
+    padding: 30px;
+    margin: 30px;
+    background-color: rgba(213, 234, 234);
+    box-shadow: 5px 5px 12px 0px rgb(80, 168, 168);
+    border: 1px solid rgb(80, 168, 168);
+    border-radius: 25px;
+}
+
+.ContainerItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.ItemHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.Info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Button {
+    background: rgb(80, 168, 168);
+    order: 1;
+}
+
+.ItemImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
