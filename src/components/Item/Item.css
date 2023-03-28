@@ -29,3 +29,9 @@
     max-height: 160px;
     margin: auto;
 }
+
+.detalle{
+    background-color: rgb(80, 168, 168);
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid rgb(80, 168, 168);
+}

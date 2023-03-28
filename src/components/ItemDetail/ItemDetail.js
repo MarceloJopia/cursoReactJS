@@ -27,6 +27,9 @@ const ItemDetail = ({ id, nombre, imagen, categoria, valor, stock }) => {
                 <p className="Info">
                     Precio: {valor} CLP
                 </p>
+                <p className="Info">
+                    Stock Disponible: {stock}
+                </p>
             </section>           
             <footer className='ItemFooter'>
                 <ItemCount onAdd={handleOnAdd} stock={stock} />
