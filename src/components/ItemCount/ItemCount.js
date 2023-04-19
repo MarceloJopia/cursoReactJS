@@ -16,11 +16,16 @@ const ItemCount = ({stock = 0, initial = 1, onAdd})=> {
        }     
    }
 
+   const handleChange = (e) => {
+        e.target.value > stock ? setQuantity(stock) : setQuantity(e.target.value)
+        if (e.target.value < 1) setQuantity(1)
+   }
+
    return(
        <div className='Counter'>          
             <div className='Controls'>
                 <button className="Button" onClick={decrement}>-</button>
-                <h4 className='Number'>{quantity}</h4>
+                <input onChange={handleChange} type='number' className='Number' value={quantity}/>
                 <button className="Button" onClick={increment}>+</button>
             </div>
             <div>

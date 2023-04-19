@@ -33,11 +33,25 @@
 .Number {
     font-size: 20px;
     padding: 20px;
-    margin: 0;
+    margin: 2;
     order: 1;
+    width: 30px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(80, 168, 168);
+    border-radius: 10px;
 }
+
 
 .Controls {
     display: flex;
     justify-content: center;
+    margin: 5px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

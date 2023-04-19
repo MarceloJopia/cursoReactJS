@@ -24,7 +24,7 @@ const Nabvar = () => {
                 </li>
             </ul>
             <a href="#">
-                <CartWidget productosEnCarrito={'0'}/>
+                <CartWidget/>
             </a>
         </nav> 
     ) 
