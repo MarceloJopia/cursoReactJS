@@ -1,12 +1,9 @@
 import './Item.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 
 const Item = ({id, nombre, valor, stock, imagen}) => {
-
-    // const value = useContext(CartContext)
-    // const navigate = useNavigate()
 
     const controlarEventoClick = (event) =>{
         event.stopPropagation()

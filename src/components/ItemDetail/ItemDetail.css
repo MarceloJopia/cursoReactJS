@@ -1,11 +1,26 @@
 .CardItem {
-    width: 500px;
-    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60vw;
+    height: auto;
+    padding: 50px;
     margin: 30px;
-    background-color: rgba(213, 234, 234);
     box-shadow: 5px 5px 12px 0px rgb(80, 168, 168);
     border: 1px solid rgb(80, 168, 168);
     border-radius: 25px;
+    gap:30px;
+}
+
+.datosProductos{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    row-gap: 30px;
+}
+
+.countFlex{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px;
 }
 
 .ContainerItem {
@@ -15,12 +30,21 @@
     border-radius: 25px;
 }
 
-.ItemHeader {
+.tituloProducto {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: start;
+    flex-wrap: none;
+    font-size: 2rem;
 }
 
-.Info {
+.infoProducto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info {
     display: flex;
     justify-content: space-around;
 }
@@ -30,10 +54,36 @@
     order: 1;
 }
 
-.ItemImg {
-    max-width: 200px;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: center;
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemImg {
+    max-width: 100%;
     margin: auto;
+}
+
+@media (max-width: 1000px) {
+    .CardItem{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .datosProductos{
+        grid-template-columns: 1fr;
+    }
+
+    .infoProducto{
+        justify-content: center;
+    }
+
+    .tituloProducto{
+        justify-content: center;
+    }
+    .itemImg{
+        width: 280px;
+    }
 }

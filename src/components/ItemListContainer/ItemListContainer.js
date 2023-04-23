@@ -1,3 +1,4 @@
+import './ItemListContainer.css'
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ItemList from "../itemList/itemList"
@@ -24,7 +25,7 @@ const ItemListContainer = ({greeting}) =>{
     },[nombreCategoria])
 
     return(
-        <div>
+        <div className="margin">
             <h1>{greeting}</h1>
             <ItemList products={products}/>
         </div>

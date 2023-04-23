@@ -23,9 +23,9 @@ const Nabvar = () => {
                     <Link to='/categoria/otros'>Otros</Link>
                 </li>
             </ul>
-            <a href="#">
+            <div>
                 <CartWidget/>
-            </a>
+            </div>
         </nav> 
     ) 
 }

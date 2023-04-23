@@ -33,7 +33,7 @@ const Cart = () => {
                 }
             </div>
             <Link to='/checkout'>
-                <button>Confirmar</button>
+                <button className='confirmButton'>Confirmar</button>
             </Link>
         </div>
     )

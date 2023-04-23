@@ -16,28 +16,36 @@ const ItemDetail = ({ id, nombre, imagen, categoria, valor, stock }) => {
 
     return (
         <article className="CardItem">
-            <header className="Header">
-                <h2 className="ItemHeader">
-                    {nombre}
-                </h2>
-            </header>
-            <picture>
-                <img src={imagen} alt={nombre} className="ItemImg"/>
-            </picture>
-            <section>
-                <p className="Info">
-                    Categoria: {categoria}
-                </p>
-                <p className="Info">
-                    Precio: {valor} CLP
-                </p>
-                <p className="Info">
-                    Stock Disponible: {stock}
-                </p>
-            </section>           
-            <footer className='ItemFooter'>
-                {<ItemCount onAdd={handleOnAdd} stock={stock} />}
-            </footer>
+            <div className='imgContainer'>
+                <img src={imagen} alt={nombre} className="itemImg"/>
+            </div>
+            <div>
+                <div className='datosProductos'>
+                    <div>
+                        <h1 className="tituloProducto">
+                            {nombre}
+                        </h1>
+                    </div>
+                    <div className='infoProducto'>
+                        <p className="info">
+                            Categoria: {categoria}
+                        </p>
+                    </div>
+                    <div className='infoProducto'>
+                        <p className="info">
+                            Precio: {valor} CLP
+                        </p>
+                        </div>
+                    <div className='infoProducto'>
+                        <p className="info">
+                            Stock Disponible: {stock}
+                        </p>
+                    </div>   
+                </div>        
+                <div className='countFlex'>
+                    {<ItemCount onAdd={handleOnAdd} stock={stock} currentItemId={id}/>}
+                </div>
+            </div>
         </article>
     )
 }
